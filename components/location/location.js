@@ -8,8 +8,8 @@ class LocationCard extends Component {
           <picture>
             <img src={require('./index.jpeg')} alt="My Dog" />
           </picture>
-          <h3>Name: <span className="location-name">The HUB</span></h3>
-          <p>type: Building</p>
+          <h3>Name: <span className="location-name">Pet Heaven</span></h3>
+          <p>Luxury Living for your Pet Family Member</p>
         </div>
       </div>
     );

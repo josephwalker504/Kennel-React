@@ -9,7 +9,7 @@ class OwnersCard extends Component {
             <img src={require('./images.jpeg')} alt="Owner" />
           </picture>
           <h3>Name: <span className="owner-name">Jerry Jones</span></h3>
-          <p>Type: COOL</p>
+          <p>Animal Lover Extraordinaire </p>
         </div>
       </div>
     );
