@@ -1,0 +1,23 @@
+{
+    "animals": [
+        { "id": 1, "name": "Doodles", "breed": "Poodle"},
+        { "id": 2, "name": "Decker", "breed": "German Sheperd" },
+        { "id": 3, "name": "Esme", "breed": "Pitbull" }
+    ],
+
+    "Owners": [
+        { "id": 1, "name": "Bill Gates", "phoneNumber": "3307725683"},
+        { "id": 2, "name": "Warren Buffet", "phoneNumber": "4027884664"},
+        { "id": 2, "name": "Jeff Bezos", "phoneNumber": "2536783454"}
+    ],
+    "locations": [
+        { "id": 1, "address": "1835 73rd Ave NE, Medina WA 98039", "type": "Tech House"},
+        { "id": 2, "address": "3555 Farnam St., Omaha, NE 68131", "type": "Old House"},
+        { "id": 3, "address": "21218 76th Ave.S.,Kent, WA 98032", "type": "Condo Building"}
+    ],
+    "employee": [
+        { "id": 1, "name": "Sean Combs", "deparment": "Marketing"},
+        { "id": 2, "name": "Justin Bieber", "deparment": "transportation"},
+        { "id": 3, "name": "Rowan Atkinson", "deparment": "Animal Care"}
+    ]
+}
