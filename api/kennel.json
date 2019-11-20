@@ -16,8 +16,8 @@
         { "id": 3, "address": "21218 76th Ave.S.,Kent, WA 98032", "type": "Condo Building"}
     ],
     "employee": [
-        { "id": 1, "name": "Sean Combs", "deparment": "Marketing"},
-        { "id": 2, "name": "Justin Bieber", "deparment": "transportation"},
-        { "id": 3, "name": "Rowan Atkinson", "deparment": "Animal Care"}
+        { "id": 1, "name": "Sean Combs", "department": "Marketing"},
+        { "id": 2, "name": "Justin Bieber", "department": "transportation"},
+        { "id": 3, "name": "Rowan Atkinson", "department": "Animal Care"}
     ]
 }
