@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import OwnerManager from '../../modules/OwnerManager'
-import OwnerCard from './OwnerCard'
+import OwnerCard from './ownerCard'
 
 
 class OwnersList extends Component {

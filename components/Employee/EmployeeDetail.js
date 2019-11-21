@@ -21,6 +21,13 @@ class EmployeeDetail extends Component {
     });
   }
 
+  handleDelete = () => {
+    //invoke the delete function in employeeManger and re-direct to the animal list.
+    this.setState({loadingStatus: true})
+    employeeManager.delete(this.props.employeeId)
+    .then(() => this.props.history.push("/employee"))
+}
+
   render() {
     return (
       <div className="employee">

@@ -2,10 +2,10 @@ import { Route } from 'react-router-dom'
 import React, { Component } from 'react'
 import Home from './home/Home'
 import AnimalList from './animal/AnimalList'
-import LocationList from './location/LocationList'
+import LocationList from './location/locationList'
 import EmployeeList from './Employee/employeeList'
 import AnimalDetail from './animal/AnimalDetail'
-import OwnersList from './OwnerCard/OwnersList'
+import OwnersList from './OwnerCard/ownersList'
 import LocationDetail from './location/LocationDetails'
 import EmployeeDetail from './Employee/EmployeeDetail'
 import OwnerDetail from './OwnerCard/OwnerDetail'
@@ -30,7 +30,10 @@ class ApplicationViews extends Component {
 }} />
 <Route path="/animals/:animalId(\d+)" render={(props) => {
   // Pass the animalId to the AnimalDetailComponent
-  return <AnimalDetail animalId={parseInt(props.match.params.animalId)}/>
+  return <AnimalDetail
+   animalId={parseInt(props.match.params.animalId)}
+   {...props}
+  />
 }} />
 
 {/*
@@ -47,17 +50,23 @@ class ApplicationViews extends Component {
           <Route path="/location/:locationId(\d+)" render={(props) => {
   return <LocationDetail locationId={parseInt(props.match.params.locationId)}/>
 }} />
-          <Route path="/Employee" render={(props) => {
+          <Route exact path="/Employee" render={(props) => {
               return <EmployeeList />
           }} />
           <Route path="/employee/:employeeId(\d+)" render={(props) => {
-  return <EmployeeDetail employeeId={parseInt(props.match.params.employeeId)}/>
+  return <EmployeeDetail 
+          employeeId={parseInt(props.match.params.employeeId)}
+          {...props}
+  />
 }} />
           <Route exact path="/owners" render={(props) => {
               return <OwnersList />
           }} />
           <Route path="/owners/:ownersId(\d+)" render={(props) => {
-  return <OwnerDetail ownerId={parseInt(props.match.params.ownerId)}/>
+  return <OwnerDetail
+         ownerId={parseInt(props.match.params.ownerId)}
+         {...props}
+         />
 }} />
       </React.Fragment>
 

@@ -8,9 +8,9 @@ class LocationCard extends Component {
       <div className="location">
         <div className="location-content">
           <picture>
-            <img src={require('./index.jpeg')} alt="My Dog" />
+            <img src={require('./index.jpeg')} alt="Building" />
           </picture>
-          <h3>Name: <span className="location-name">{this.props.location.address}</span></h3>
+          <h3>Address: <span className="location-name">{this.props.location.address}</span></h3>
           <p>{this.props.location.type}</p>
           <button type="button" onClick={() => this.props.deleteLocation(this.props.location.id)}>Closed Down</button>
           <Link to={`/location/${this.props.location.id}`}><button>Details</button></Link>
