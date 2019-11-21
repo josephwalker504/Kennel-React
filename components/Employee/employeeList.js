@@ -18,13 +18,29 @@ componentDidMount(){
     })
 }
 
+deleteEmployee = id => {
+  employeeManager.delete(id)
+  .then(() => {
+    employeeManager.getAll()
+    .then((newEmployees) => {
+      this.setState({
+          employee: newEmployees
+      })
+    })
+  })
+}
+
 render(){
     console.log("EmployeeList: Render");
   
     return(
       <div className="container-cards">
         {this.state.employee.map(employee =>
-          <EmployeeCard key={employee.id} employee={employee} />
+          <EmployeeCard 
+            key={employee.id}
+            employee={employee}
+            deleteEmployeel={this.deleteEmployee} 
+          />
         )}
       </div>
     )

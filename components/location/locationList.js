@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import locationManager from '../../modules/locationManager'
-import LocationCard from './locationCard'
+import LocationCard from './LocationCard'
 
 
 class LocationList extends Component {
@@ -20,11 +20,27 @@ class LocationList extends Component {
         })
     }
 
+    deleteLocation = id => {
+        locationManager.delete(id)
+        .then(() => {
+          locationManager.getAll()
+          .then((newLocation) => {
+            this.setState({
+                locations: newLocation
+            })
+          })
+        })
+      }
+
     render() {
         return(
             <div className="location-cards">
             {this.state.locations.map(location =>
-            <LocationCard key={location.id} location={location} />
+            <LocationCard
+             key={location.id}
+            location={location} 
+            deleteLocation={this.deleteLocation}
+            />
             )}
         </div>
         )

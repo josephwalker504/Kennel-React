@@ -6,5 +6,11 @@ export default {
   },
   getAll() {
     return fetch(`${baseURL}/employee`).then(result => result.json())
+  },
+  delete(id) {
+    return fetch(`http://localhost:5002/employee/${id}`, {
+        method: "DELETE"
+    })
+    .then(result => result.json())
   }
 }

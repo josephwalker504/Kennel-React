@@ -5,10 +5,10 @@
         { "id": 3, "name": "Esme", "breed": "Pitbull" }
     ],
 
-    "Owners": [
-        { "id": 1, "name": "Bill Gates", "phoneNumber": "3307725683"},
-        { "id": 2, "name": "Warren Buffet", "phoneNumber": "4027884664"},
-        { "id": 2, "name": "Jeff Bezos", "phoneNumber": "2536783454"}
+    "owners": [
+        { "id": 1, "name": "Bill Gates", "phoneNumber": " (330) 772-5683"},
+        { "id": 2, "name": "Warren Buffet", "phoneNumber": " (402) 788-4664"},
+        { "id": 3, "name": "Jeff Bezos", "phoneNumber": " (253) 678-3454"}
     ],
     "locations": [
         { "id": 1, "address": "1835 73rd Ave NE, Medina WA 98039", "type": "Tech House"},
