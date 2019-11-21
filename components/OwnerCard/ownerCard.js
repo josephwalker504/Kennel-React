@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
+import './Owner.css'
+import { Link } from 'react-router-dom';
 
-class OwnersCard extends Component {
+
+class OwnerCard extends Component {
   render() {
+    console.log("test")
     return (
-      <div className="owner">
-        <div className="owner-content">
+      <div className="Owner">
+        <div className="Owner-content">
           <picture>
             <img src={require('./images.jpeg')} alt="Owner" />
           </picture>
-          <h3>Name: <span className="owner-name">Jerry Jones</span></h3>
-          <p>Animal Lover Extraordinaire </p>
+          <h3>Name: <span className="Owner-name">{this.props.owner.name}</span></h3>
+          <p>{this.props.owner.phoneNumber} </p>
+          <button type="button" onClick={() => this.props.deleteOwner(this.props.owner.id)}>Moved On</button>
+          <Link to={`/owner/${this.props.owner.id}`}><button>Details</button></Link>
+
+          
+
         </div>
       </div>
     );
   }
 }
 
-export default OwnersCard;
+export default OwnerCard;

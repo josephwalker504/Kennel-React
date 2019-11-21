@@ -8,7 +8,7 @@ class NavBar extends Component {
 
     return (
       <header>
-        <h1 className="site-title">Student Kennels<br />
+        <h1 className="site-title">Luxury Kennels<br />
           <small>Loving care when you're not there.</small>
         </h1>
         <nav>
@@ -17,7 +17,7 @@ class NavBar extends Component {
             <li><Link className="nav-link" to="/animals">Animals</Link></li>
             <li><Link className="nav-link" to="location"> Locations</Link></li>
             <li><Link className="nav-link" to="Employee"> Employees</Link></li>
-            <li><Link className="nav-link" to="OwnerCard">Owners</Link></li>
+            <li><Link className="nav-link" to="owners">Owners</Link></li>
           </ul>
         </nav>
       </header>
